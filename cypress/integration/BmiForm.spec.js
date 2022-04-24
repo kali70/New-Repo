@@ -10,6 +10,7 @@ describe('BmiForm Component', () => {
 
 		cy.get('#weight').type(weight).should('have.value', weight);
 		cy.get('#height').type(height).should('have.value', height);
+		cy.percySnapshot('After');
 	});
 
 	context('Form submission', () => {
